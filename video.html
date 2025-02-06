@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download YouTube Video</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Download YouTube Video</h1>
+        
+        <input type="text" id="video-url" placeholder="Enter YouTube Video URL" required>
+
+        <label for="format">Select Format:</label>
+        <select id="format">
+            <option value="mp4">MP4</option>
+            <option value="webm">WEBM</option>
+            <option value="mkv">MKV</option>
+        </select>
+
+        <label for="resolution">Select Resolution:</label>
+        <select id="resolution">
+            <option value="360p">360p</option>
+            <option value="720p">720p</option>
+            <option value="1080p">1080p</option>
+            <option value="2k">2K</option>
+            <option value="4k">4K</option>
+        </select>
+
+        <button onclick="downloadVideo()">Download</button>
+        <p id="status"></p>
+
+        <a href="index.html" class="back-button">⬅ Back to Home</a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
