@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download YouTube Playlist (Audio)</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Download YouTube Playlist (Audio)</h1>
+
+        <input type="text" id="playlist-audio-url" placeholder="Enter YouTube Playlist URL" required>
+
+        <label for="playlist-audio-format">Select Format:</label>
+        <select id="playlist-audio-format">
+            <option value="mp3">MP3</option>
+            <option value="wav">WAV</option>
+            <option value="aac">AAC</option>
+            <option value="flac">FLAC</option>
+            <option value="ogg">OGG</option>
+        </select>
+
+        <button onclick="downloadPlaylistAudio()">Download Playlist</button>
+        <p id="status"></p>
+
+        <a href="index.html" class="back-button">⬅ Back to Home</a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
